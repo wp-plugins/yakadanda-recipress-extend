@@ -13,7 +13,8 @@ A WordPress plugin that extends the Recipress Plugin.
 
 A WordPress plugin that extends the Recipress Plugin to allow for data in main RSS Feed, cleans output for Recipes with no Instructions, allows for printable Recipes.
 
-== Features ==
+= Features =
+
 * Adds Recipes to Main Blog RSS Feed, including Images
 * Allows for Recipes to be Printed
 * Cleans output on recipes with no instructions

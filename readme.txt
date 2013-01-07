@@ -19,7 +19,7 @@ A WordPress plugin that extends the Recipress Plugin to allow for data in main R
 * Allows for Recipes to be Printed
 * Cleans output on recipes with no instructions
 * Option to unlink Ingredients Links on output
-* Work in WordPressMU
+* Works in WordPressMU
 
 == Installation ==
 

@@ -15,8 +15,10 @@ function recipressextend_postrss($content) {
   }
   return $content;
 }
-add_filter( 'the_excerpt_rss', 'recipressextend_postrss' );
-add_filter( 'the_content', 'recipressextend_postrss' );
+if (recipressextend_recipress_version()) {
+  add_filter( 'the_excerpt_rss', 'recipressextend_postrss' );
+  add_filter( 'the_content', 'recipressextend_postrss' );
+}
 
 // Override get_the_recipe function
 function get_the_recipe_extend( $postid = null , $output_type ) {
@@ -137,8 +139,10 @@ function the_recipe_extend( $content ) {
 }
 
 // Override recipress_autoadd function
-remove_action('template_redirect', 'recipress_autoadd');
-add_action('template_redirect', 'recipressextend_autoadd');
+if (recipressextend_recipress_version()) {
+  remove_action('template_redirect', 'recipress_autoadd');
+  add_action('template_redirect', 'recipressextend_autoadd');
+}
 function recipressextend_autoadd() {
   $autoadd = recipress_options('autoadd');
   if ( !isset($autoadd) || $autoadd == true ) {

@@ -27,5 +27,13 @@ function recipressextend_deactivate() {
 }
 register_deactivation_hook( __FILE__, 'recipressextend_deactivate' );
 
+function recipressextend_recipress_version() {
+  if (!function_exists('get_plugins')) require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+  $plugin_folder = get_plugins('/recipress');
+  if ($plugin_folder['recipress.php']['Version'] == '1.9.5') return true;
+  else return false;
+}
+add_action('init', 'recipressextend_recipress_version');
+
 require_once( 'rss.php' );
 require_once( 'print.php' );

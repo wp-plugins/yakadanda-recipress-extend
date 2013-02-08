@@ -18,7 +18,7 @@ A WordPress plugin that extends the Recipress Plugin to allow for data in main R
 * Adds Recipes to Main Blog RSS Feed, including Images
 * Allows for Recipes to be Printed
 * Cleans output on recipes with no instructions
-* Option to unlink Ingredients Links on output
+* Option to unlink taxonomy terms (cuisine, course, skill level) on output
 * Works in WordPressMU
 
 == Installation ==
@@ -46,7 +46,7 @@ Yes, you need the latest version of Recipress.
 * Removed Instructions in recipes post if no instructions data
 
 = 0.0.2 =
-* Added new feature, to enable/disable ingredient links and recipe tax links
+* Added new feature, to enable/disable ingredient links and recipe taxonomy terms
 
 = 0.0.1 =
 * Print recipe feature

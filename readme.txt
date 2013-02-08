@@ -3,8 +3,8 @@ Contributors: Yakadanda.com
 Donate link: http://www.yakadanda.com/
 Tags: recipress, recipes, yakadanda
 Requires at least: 3.4.2
-Tested up to: 3.5
-Stable tag: 0.0.3
+Tested up to: 3.5.1
+Stable tag: 0.0.4
 License: GPLv2 or later
 
 A WordPress plugin that extends the Recipress Plugin.
@@ -37,15 +37,31 @@ Yes, you need the latest version of Recipress.
 
 == Changelog ==
 
+= 0.0.4 =
+* Compatible with Recipress 1.9.5
+* Added recipe image on print recipe feature
+* Removed enable or disable ingredient links feature
+
 = 0.0.3 =
 * Removed Instructions in recipes post if no instructions data
-* Fixed cross browser issues
 
 = 0.0.2 =
 * Added new feature, to enable/disable ingredient links and recipe tax links
 
 = 0.0.1 =
-* Print recipe
+* Print recipe feature
 * Change 'Print Recipe' link to custom text link
 
 == Upgrade Notice ==
+
+= 0.0.4 =
+* Worked with Recipress 1.9.5
+
+= 0.0.3 =
+* Fixed cross browser issues
+
+= 0.0.2 =
+* -
+
+= 0.0.1 =
+* -

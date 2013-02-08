@@ -9,18 +9,18 @@ function recipressextend_print_link() {
   $margin_h = empty( $recipressextend_options['margin_h'] ) ? 0 : $recipressextend_options['margin_h'];
   $print_stub = empty( $recipressextend_options['print_text'] ) ? 'Print Recipe' : $recipressextend_options['print_text'];
 
-  wp_register_script( 'recipressextend_print', plugins_url( '/js/print.js', __FILE__ ), array( 'jquery' ), '1', true );
+  wp_register_script( 'recipressextend_print', plugins_url( '/js/print.js', __FILE__ ), array( 'jquery' ), '0.0.4', true );
   wp_enqueue_script( 'recipressextend_print' );
 
-  $link = add_query_arg( 'print', '1', get_permalink() );
-  $content = '<p style="margin:' . $margin_v . 'px ' . $margin_h . 'px;" id="print-page-link"><a href="' . $link . '">' . $print_stub . '</a></p>';
+  $link = add_query_arg( 'yrecipressextend_print', '1', get_permalink() );
+  $content = '<p style="margin:' . $margin_v . 'px ' . $margin_h . 'px;" id="recipressextend-print-link"><a href="' . $link . '">' . $print_stub . '</a></p>';
   return $content;
 	
 }
 
 add_action( 'template_redirect', 'recipressextend_print', 5 );
 function recipressextend_print() {
-	if ( isset( $_GET['print'] ) && $_GET['print'] == 1 ) {
+	if ( isset( $_GET['yrecipressextend_print'] ) && $_GET['yrecipressextend_print'] == 1 ) {
 		include( plugin_dir_path(__FILE__) . 'print-preview.php' );
 		exit();
 	}
@@ -87,20 +87,20 @@ function recipressextend_options_page() {
 						<td><input type="checkbox" name="recipressextend_options[auto]" id="recipressextend_options[auto]" <?php //isset( $recipressextend_options['auto'] ) ? checked( $recipressextend_options['auto'], 'on', true ) : ''; ?>></td>
 					</tr> -->
           <tr valign="top">
-            <th scope="row"><label for="recipressextend_options[ingredient_tax_links]">Ingredient links and Recipe Tax links</label></th>
+            <th scope="row"><label for="recipressextend_options[ingredient_tax_links]">Recipe Tax links</label></th>
             <td>
               <fieldset>
                 <legend class="screen-reader-text">
-                  <span>Ingredient links and Recipe tax links</span>
+                  <span>Recipe tax links</span>
                 </legend>
                 <p>
                   <label>
-                    <input type="radio" <?php echo (($recipressextend_options['ingredient_tax_links'] == 'on') || (!isset($recipressextend_options['ingredient_tax_links']))) ? 'checked="checked"' : null; ?> value="on" name="recipressextend_options[ingredient_tax_links]">
+                    <input type="radio" <?php echo (($recipressextend_options['tax_links'] == 'on') || (!isset($recipressextend_options['tax_links']))) ? 'checked="checked"' : null; ?> value="on" name="recipressextend_options[tax_links]">
                     On
                   </label>
                   <br>
                   <label>
-                    <input type="radio" <?php echo ($recipressextend_options['ingredient_tax_links'] == 'off') ? 'checked="checked"' : null; ?> value="off" name="recipressextend_options[ingredient_tax_links]">
+                    <input type="radio" <?php echo ($recipressextend_options['tax_links'] == 'off') ? 'checked="checked"' : null; ?> value="off" name="recipressextend_options[tax_links]">
                     Off
                   </label>
                 </p>

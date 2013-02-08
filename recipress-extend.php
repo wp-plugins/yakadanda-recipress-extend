@@ -3,7 +3,7 @@
 Plugin Name: Yakadanda ReciPress Extended
 Plugin URI: http://www.yakadanda.com/plugins/yakadanda-recipress-extended/
 Description: A WordPress plugin that extends the Recipress Plugin to allow for data in main RSS Feed, cleans output for Recipes with no Instructions, allows for printable Recipes.
-Version: 0.0.3
+Version: 0.0.4
 Author: Peter Ricci
 Author URI: http://www.yakadanda.com/
 License: GPLv2

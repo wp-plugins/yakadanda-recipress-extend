@@ -21,7 +21,7 @@ A WordPress plugin that extends the Recipress Plugin to allow for data in main R
 * Option to unlink Ingredients links or Taxonomies links on output
 * Works in WordPressMU
 * ***New** Support for Recipress 1.9.4 and Recipress 1.9.5
-* ***New** Added Google recipes markup. See https://support.google.com/webmasters/answer/173379 for detail
+* ***New** Added Google recipes markup. See https://support.google.com/webmasters/answer/173379 for details
 
 == Installation ==
 

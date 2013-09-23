@@ -2,9 +2,9 @@
 Contributors: Yakadanda.com
 Donate link: http://www.yakadanda.com/
 Tags: recipress, recipes, yakadanda
-Requires at least: 3.4.2
-Tested up to: 3.5.1
-Stable tag: 0.0.4
+Requires at least: 3.5
+Tested up to: 3.6.1
+Stable tag: 0.0.5
 License: GPLv2 or later
 
 A WordPress plugin that extends the Recipress Plugin.
@@ -17,9 +17,11 @@ A WordPress plugin that extends the Recipress Plugin to allow for data in main R
 
 * Adds Recipes to Main Blog RSS Feed, including Images
 * Allows for Recipes to be Printed
-* Cleans output on recipes with no instructions
-* Option to unlink taxonomy terms (cuisine, course, skill level) on output
+* Cleans output on recipes with no instruction or no ingredient
+* Option to unlink Ingredients links or Taxonomies links on output
 * Works in WordPressMU
+* ***New** Support for Recipress 1.9.4 and Recipress 1.9.5
+* ***New** Added Google recipes markup. See https://support.google.com/webmasters/answer/173379 for detail
 
 == Installation ==
 
@@ -37,6 +39,10 @@ Yes, you need the latest version of Recipress.
 
 == Changelog ==
 
+= 0.0.5 =
+* Compatible only with Recipress 1.9.4 and Recipress 1.9.5
+* Added Google rich snippets (microdata) for recipes
+
 = 0.0.4 =
 * Compatible with Recipress 1.9.5
 * Added recipe image on print recipe feature
@@ -46,13 +52,16 @@ Yes, you need the latest version of Recipress.
 * Removed Instructions in recipes post if no instructions data
 
 = 0.0.2 =
-* Added new feature, to enable/disable ingredient links and recipe taxonomy terms
+* Added new feature, to enable/disable ingredient links and recipe tax links
 
 = 0.0.1 =
 * Print recipe feature
 * Change 'Print Recipe' link to custom text link
 
 == Upgrade Notice ==
+
+= 0.0.5 =
+* Fixed print feature issues
 
 = 0.0.4 =
 * Worked with Recipress 1.9.5

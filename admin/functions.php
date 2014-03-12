@@ -61,7 +61,7 @@ function recipressextend_options_page() {
             <tr valign="top">
               <th scope="row"><label for="recipressextend_options[print_text]">Custom text instead of 'Print Recipe'</label></th>
               <td>
-                <input type="text" class="regular-text code" value="<?php echo $recipressextend_options['print_text']; ?>" id="recipressextend_options[print_text]" name="recipressextend_options[print_text]">
+                <input type="text" class="regular-text code" value="<?php echo $recipressextend_options['print_text']; ?>" id="recipressextend_options[print_text]" name="recipressextend_options[print_text]" placeholder="Print Recipe">
                 <p class="description">Type text</p>
               </td>
             </tr>

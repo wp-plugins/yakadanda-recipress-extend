@@ -36,6 +36,8 @@ Yes, you need the latest version of Recipress.
 
 == Screenshots ==
 
+1. ReciPress Extend Options page using ReciPress 1.9.4
+2. ReciPress Extend Options page using ReciPress 1.9.5
 
 == Changelog ==
 

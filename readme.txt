@@ -38,6 +38,7 @@ Yes, you need the latest version of Recipress.
 
 1. ReciPress Extend Options page using ReciPress 1.9.4
 2. ReciPress Extend Options page using ReciPress 1.9.5
+3. Print link on recipe post
 
 == Changelog ==
 

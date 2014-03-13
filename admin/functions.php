@@ -529,3 +529,40 @@ if ( recipressextend_recipress_version() == '1.9.5' ) {
   }
   
 }
+
+// notification
+if ( (recipressextend_get_page() == 'options-general.php?page=recipressextend_options') && !get_option('recipressextend_dismiss') ) add_action('admin_notices', 'recipressextend_admin_notice');
+function recipressextend_admin_notice() {
+  ?>
+    <div class="updated recipressextend-notice">
+      <p>
+        <strong>This will be the ReciPress Extend last update.</strong> We are not going updates anymore, because Recipress are not upgrading their plugin for a long time. <a id="recipressextend-dismiss" href="#" style="float: right;">Dismiss</a>
+      </p>
+    </div>
+  <?php
+}
+
+add_action('admin_footer', 'recipressextend_dismiss_javascript');
+function recipressextend_dismiss_javascript() {
+  ?>
+  <script type="text/javascript" >
+    jQuery(function($){
+      $('#recipressextend-dismiss').click(function(e){
+        var data = {
+            action: 'recipressextend_dismiss'
+          };
+        $.post(ajaxurl, data, function(response) {
+          $('.recipressextend-notice').fadeOut(500, function() { $('.recipressextend-notice').remove(); });
+        });
+        e.prevenDefault();
+      });
+    });
+  </script>
+  <?php
+}
+
+add_action( 'wp_ajax_recipressextend_dismiss', 'recipressextend_dismiss_callback' );
+function recipressextend_dismiss_callback() {
+  update_option('recipressextend_dismiss', true);
+	die();
+}

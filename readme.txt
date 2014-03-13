@@ -23,6 +23,10 @@ A WordPress plugin that extends the Recipress Plugin to allow for data in main R
 * Support for Recipress 1.9.4 and Recipress 1.9.5
 * Added Google recipes markup. See https://support.google.com/webmasters/answer/173379 for details
 
+= Note =
+
+This will be the last update, we are not going updates anymore, because Recipress are not upgrading their plugin for a long time.
+
 == Installation ==
 
 1. Download & Unzip and Upload all files to a sub directory in "/wp-content/plugins/".

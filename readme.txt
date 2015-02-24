@@ -3,7 +3,7 @@ Contributors: Yakadanda.com
 Donate link: http://www.yakadanda.com/
 Tags: recipress, recipes, yakadanda
 Requires at least: 3.8
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: 0.0.6
 License: GPLv2 or later
 
